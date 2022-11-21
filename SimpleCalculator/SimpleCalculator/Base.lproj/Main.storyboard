@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-hl-D51">
+                                <rect key="frame" x="60" y="143" width="273" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="x9A-81-CIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="19s-MZ-ehe">
+                                <rect key="frame" x="60" y="231" width="273" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="YtA-CO-xFx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-NA-vTc">
+                                <rect key="frame" x="55" y="325" width="43" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="75O-XU-cHs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sumFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qos-xj-KzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm7-RG-Uro">
+                                <rect key="frame" x="135" y="325" width="43" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="0rb-rE-ECy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lq8-w9-DVa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkM-Su-26p">
+                                <rect key="frame" x="295" y="325" width="43" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="/">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="divideFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyf-yP-Rep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNS-Rk-6Rh">
+                                <rect key="frame" x="215" y="333" width="43" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="rsm-6T-WRm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="*">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplyFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdj-j1-BvU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9z-J8-fWx">
+                                <rect key="frame" x="101" y="413" width="190" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bVB-hl-D51" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="3bb-Q4-erc"/>
+                            <constraint firstItem="Z9z-J8-fWx" firstAttribute="top" secondItem="mm7-RG-Uro" secondAttribute="bottom" constant="53" id="6P9-BS-HFr"/>
+                            <constraint firstItem="bVB-hl-D51" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="7go-Du-hfD"/>
+                            <constraint firstItem="qVN-NA-vTc" firstAttribute="top" secondItem="19s-MZ-ehe" secondAttribute="bottom" constant="60" id="BYL-xF-jM4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9z-J8-fWx" secondAttribute="bottom" constant="346" id="GmG-T1-VUz"/>
+                            <constraint firstItem="mm7-RG-Uro" firstAttribute="leading" secondItem="qVN-NA-vTc" secondAttribute="trailing" constant="37" id="NPZ-q0-yWZ"/>
+                            <constraint firstItem="Z9z-J8-fWx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="SEn-Ud-hFO"/>
+                            <constraint firstItem="mm7-RG-Uro" firstAttribute="baseline" secondItem="qVN-NA-vTc" secondAttribute="firstBaseline" id="Vo1-Lz-1fs"/>
+                            <constraint firstItem="KkM-Su-26p" firstAttribute="leading" secondItem="xNS-Rk-6Rh" secondAttribute="trailing" constant="37" id="XAO-nH-6ko"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KkM-Su-26p" secondAttribute="trailing" constant="55" id="ZxN-0L-92u"/>
+                            <constraint firstItem="Z9z-J8-fWx" firstAttribute="top" secondItem="xNS-Rk-6Rh" secondAttribute="bottom" constant="45" id="a5b-4f-0OP"/>
+                            <constraint firstItem="Z9z-J8-fWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a91-9e-tfW"/>
+                            <constraint firstItem="qVN-NA-vTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="dQJ-an-a2s"/>
+                            <constraint firstItem="19s-MZ-ehe" firstAttribute="top" secondItem="bVB-hl-D51" secondAttribute="bottom" constant="54" id="eXF-Pz-Mzh"/>
+                            <constraint firstItem="xNS-Rk-6Rh" firstAttribute="top" secondItem="19s-MZ-ehe" secondAttribute="bottom" constant="68" id="gvl-DR-i3y"/>
+                            <constraint firstItem="xNS-Rk-6Rh" firstAttribute="leading" secondItem="mm7-RG-Uro" secondAttribute="trailing" constant="37" id="h24-Di-f1u"/>
+                            <constraint firstItem="19s-MZ-ehe" firstAttribute="centerX" secondItem="Z9z-J8-fWx" secondAttribute="centerX" id="lVZ-4K-hxU"/>
+                            <constraint firstItem="bVB-hl-D51" firstAttribute="trailing" secondItem="19s-MZ-ehe" secondAttribute="trailing" id="qKa-s3-ELK"/>
+                            <constraint firstItem="mm7-RG-Uro" firstAttribute="baseline" secondItem="KkM-Su-26p" secondAttribute="baseline" id="qie-e1-990"/>
+                            <constraint firstItem="bVB-hl-D51" firstAttribute="leading" secondItem="19s-MZ-ehe" secondAttribute="leading" id="u6J-IN-NyR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Z9z-J8-fWx" id="wH2-M4-sEi"/>
+                        <outlet property="textLabel1" destination="bVB-hl-D51" id="m2h-xq-5rB"/>
+                        <outlet property="textLabel2" destination="19s-MZ-ehe" id="1fN-id-ouA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60.305343511450381" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
