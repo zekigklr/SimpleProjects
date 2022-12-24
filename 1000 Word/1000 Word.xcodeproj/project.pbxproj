@@ -16,6 +16,7 @@
 		35CE9C7C2954191E00319AE4 /* LearnedWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE9C7B2954191E00319AE4 /* LearnedWordsViewController.swift */; };
 		35CE9C7E29541B4900319AE4 /* ToLearnedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE9C7D29541B4900319AE4 /* ToLearnedViewController.swift */; };
 		35CE9C85295425CC00319AE4 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE9C84295425CC00319AE4 /* CollectionViewTableViewCell.swift */; };
+		35CE9C872954AE3F00319AE4 /* ProgramHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE9C862954AE3F00319AE4 /* ProgramHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		35CE9C7B2954191E00319AE4 /* LearnedWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnedWordsViewController.swift; sourceTree = "<group>"; };
 		35CE9C7D29541B4900319AE4 /* ToLearnedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLearnedViewController.swift; sourceTree = "<group>"; };
 		35CE9C84295425CC00319AE4 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		35CE9C862954AE3F00319AE4 /* ProgramHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				35CE9C84295425CC00319AE4 /* CollectionViewTableViewCell.swift */,
+				35CE9C862954AE3F00319AE4 /* ProgramHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				35CE9C85295425CC00319AE4 /* CollectionViewTableViewCell.swift in Sources */,
 				35CE9C7A295418B700319AE4 /* HomeViewController.swift in Sources */,
 				35CE9C7C2954191E00319AE4 /* LearnedWordsViewController.swift in Sources */,
+				35CE9C872954AE3F00319AE4 /* ProgramHeaderUIView.swift in Sources */,
 				35CE9C7E29541B4900319AE4 /* ToLearnedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

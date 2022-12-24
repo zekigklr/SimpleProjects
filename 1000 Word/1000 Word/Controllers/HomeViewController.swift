@@ -4,6 +4,13 @@
 //
 //  Created by Zeki Gökler on 22.12.2022.
 //
+//  Yapılacak olan proje ingilizce öğrenmek için bi yöntem. 1000 kelime bilmek küçük gibi gelsede 1000 kelime ve kullanım şekillerini kavradıktan sonra günlük konuşmaların %84 ü
+//  anlaşılabilir oluyor. Günde sadece 8 kelime öğrenerek 125 günde izlediğiniz bi filmin %84 ünü anlayabilmek bence harika.
+//  Yaptığım kısım sadece bu değil bi çok şekilde hatalar yaptım farklılaştırdım.
+//  Projede olacaklar 1-) Öğrenilen kelimeler 2-) Öğrenilecek kelimeler 3-) 1000 Kelime
+//  Artılar : Her kelime için örnek cümle, video voscreen benzeri, ve hatırlatma testleri.
+
+
 
 import UIKit
 
@@ -17,14 +24,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "1000 Words"
         view.backgroundColor = .systemBackground
         view.addSubview(homeFeedTable)
         
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
-        
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        // Üstte boş bir alan bıraktım. Orada 1000 kelimenin çalışılma şeklini anlatıcak bir görsel koyucam.
+        let headerView = ProgramHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
         
     }
     override func viewDidLayoutSubviews() {
@@ -36,7 +43,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        20
+        125
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
