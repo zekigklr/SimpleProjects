@@ -43,8 +43,7 @@ class CollectionViewTableViewCell: UITableViewCell {
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-   
-    func collectionView(_ CollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         func collectionView(_ CollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = CollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .systemCyan
         return cell
@@ -53,6 +52,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //Her satırda 8 tane cell olmasını sağladı.
         return 8
+        
     }
     
     
