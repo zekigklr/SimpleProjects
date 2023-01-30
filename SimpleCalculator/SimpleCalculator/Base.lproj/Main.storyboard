@@ -99,7 +99,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="*">
                                             <attributes>
-                                                <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="36"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             </attributes>
                                         </fragment>

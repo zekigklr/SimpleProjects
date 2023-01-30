@@ -20,12 +20,12 @@ class MainTabBarViewController: UITabBarController {
         
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc2.tabBarItem.image = UIImage(systemName: "play.circle")
-        vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc3.tabBarItem.image = UIImage(systemName: "face.smiling.inverse")
         vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
         
         vc1.title = "Home"
-        vc2.title = "Coming Soon"
-        vc3.title = "Top Search"
+        vc2.title = "New and Popular"
+        vc3.title = "Fast Laughs"
         vc4.title = "Downloads"
         
         
