@@ -15,7 +15,7 @@ class HeroHeaderUIView: UIView {
         button.setTitleColor(.black, for: .normal )
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
-        button.layer.backgroundColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        button.layer.backgroundColor = CGColor(red: 255, green: 255, blue: 255, alpha: 0.92)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         
@@ -28,7 +28,7 @@ class HeroHeaderUIView: UIView {
         button.setTitleColor(.black, for: .normal )
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
-        button.layer.backgroundColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        button.layer.backgroundColor = CGColor(red: 255, green: 255, blue: 255, alpha: 0.92)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
 
